@@ -216,22 +216,6 @@
 </div>
 </section> -->
 
-<script>
-  // Smooth scrolling for the Services link in the navbar
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
-
-          window.scrollTo({
-              top: targetElement.offsetTop - 70,  // Adjust for navbar height
-              behavior: 'smooth'
-          });
-      });
-  });
-</script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
