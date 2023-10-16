@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8f9fa, #e2e3e5);
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #ff6b6b;
+            border-color: #ff6b6b;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #ff4141;
+            border-color: #ff4141;
+        }
+        .alert {
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#navbar-placeholder").load("_nav.html");
+        });
+    </script>
+</head>
+<body>
+
+    <?php
+include('_nav.html');
+?>
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Hello, Welcome Back!<br>Login to Our Website</h1>
+        <form method="post">
+            
+
+
+            <!-- Email or Username -->
+            <div class="mb-3">
+                <label for="emailOrUsername" class="form-label">Email ID or Username</label>
+                <input type="text" class="form-control" id="emailOrUsername" name="emailOrUsername" placeholder="Enter your Email-ID or Username" required>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter a secure password" required>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="reset" class="btn btn-primary">Reset</button>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

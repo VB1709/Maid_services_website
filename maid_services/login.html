@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Maid Service Website</title>
+  <style>
+    /* Custom CSS */
+    body {
+      padding-top: 70px; /* Adjust based on navbar height */
+      background-color: #f7f7f7;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .service-item {
+      width: 300px;
+      margin-right: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .service-item img {
+      max-width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ccc;
+    }
+    .service-item p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login/Signup</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our Maid Services</h2>
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex overflow-auto">
+        <div class="service-item">
+          <img src="image1.jpg" alt="Service 1" class="img-fluid">
+          <h4 class="mt-2">Cleaning Service</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget urna sed justo lacinia bibendum.</p>
+        </div>
+        <div class="service-item">
+          <img src="image2.jpg" alt="Service 2" class="img-fluid">
+          <h4 class="mt-2">Laundry Service</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget urna sed justo lacinia bibendum.</p>
+        </div>
+        <div class="service-item">
+          <img src="image3.jpg" alt="Service 3" class="img-fluid">
+          <h4 class="mt-2">Cooking Service</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget urna sed justo lacinia bibendum.</p>
+        </div>
+        <!-- Add more service items as needed -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
