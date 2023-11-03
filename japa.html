@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Create a separate CSS file for styling -->
+  <style>
+    body {
+      background-image: url('images/japamaid.jpg'); /* Add your background image path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /*filter: blur(5px); /* Apply blur effect to the background image */ 
+    }
+
+    .navbar-nav smooth-scroll {
+      scroll-behavior: smooth;
+    }
+
+    .logo-img {
+      position: absolute;
+      top: 5px;
+      left: 150px;
+      width: 50px;
+      height: 50px;
+  }
+
+    .transparent-box {
+      background: rgba(0, 0, 0, 0.686); /* White transparent box */
+      position: absolute;
+      top: 55%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      height:auto;
+      width: 400px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 20px;
+      color: #ffffff;
+    }
+
+    .category {
+      /*background-color: rgba(255, 255, 255, 0.5); /* Background color for the category boxes */
+      /*padding: 10px;
+      margin: 10px;
+      /*border-radius: 5px;*/
+      text-align: center;
+      cursor: pointer;
+      color: #f1f0f0;
+      font-size:large;
+    }
+
+    .category:hover {
+      /*background-color: rgba(0, 0, 0, 0.7); /* Change background color on hover */
+      color: rgb(255, 3, 3);
+    }
+  </style>
+  <title> Japa Services</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="sitelogo.png" alt="BookMyBai" class="logo-img">
+        Home Services
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="maid_user_login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <h1><center>Cleaning Services</center></h1> -->
+
+  <div class="transparent-box">
+    <h3>Types of our Japa Services</h3>
+    <hr>
+    <!-- Clickable Categories -->
+    <a href="#" class="category">Baby Massage</a>
+    <hr>
+    <a href="#" class="category">Preparing Baby Food</a>
+    <hr>
+    <a href="#" class="category">Washing Baby Clothes</a>
+    <hr>
+    <a href="#" class="category">Mother Massage</a>
+    <hr>
+    <a href="#" class="category">Changing a diaper</a>
+    <hr>
+    <a href="b_maid_det.html" class="btn btn-primary" >Find a maid</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
